@@ -1,0 +1,84 @@
+/** form **/
+.form-ctn {
+    padding: 16px;
+}
+
+.form-label {
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: .02em;
+    color: #1a1a1a;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.form-inp {
+    height: 48px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: .02em;
+    color: #0f1419;
+    padding: 12px;
+    /*background-color: #f5f5f5;*/
+    background-color: white;
+    border: 1px solid var(--color-formFieldBorder);
+}
+
+.form-area {
+    height: 48px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: .02em;
+    color: #0f1419;
+    padding: 12px;
+    background-color: white;
+    border: 1px solid var(--color-formFieldBorder);
+}
+
+.form-area {
+    height: 100px;
+}
+
+.form-err {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    letter-spacing: .02em;
+    color: #f4323e;
+    min-height: 24px;
+}
+
+.gcard {
+    box-shadow: var(--card-shadow);
+    padding: 16px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.card-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.card-inp {
+	border: none;
+	width: 100%;
+	border-radius: var(--borderRadius);
+	padding: 0px 12px;
+	background-color: #f5f5f5;
+}
+
+.gcard + .gcard {
+    margin-top: 24px;
+}

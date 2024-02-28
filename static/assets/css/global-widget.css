@@ -1,0 +1,26 @@
+/** Widget **/
+
+.feed + .widgets {
+    padding-left: 24px;
+}
+
+.widgets + .feed {
+    padding-left: 24px;
+}
+
+.widget-ctn--dark {
+    padding: 20px;
+    border-radius: 20px;
+	background-color: #f5f8fa;
+}
+
+
+.widget-ctn h2 {
+	font-size: 18px;
+	font-weight: 800;
+}
+
+.widget-desc {
+    color: #536471;
+    font-size: 13px;
+}

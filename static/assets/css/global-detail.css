@@ -1,0 +1,24 @@
+.detail-label {
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: .02em;
+    color: #1a1a1a;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.detail-line {
+    width: 100%;
+    height: 1px;
+    background: #cdd6df;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.detail-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    margin-left: auto;
+}

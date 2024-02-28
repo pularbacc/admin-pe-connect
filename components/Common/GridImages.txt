@@ -1,0 +1,53 @@
+<template>
+    <div class="view-image">
+        <ul v-if="getListImage.length > 0" class="view-image__list" :style="dynamicGridCol">
+            <li
+v-for="(url, index) in getListImage.slice(0, 3)" :key="index" class="view-image__list__item" :class="[
+                `view-image__list__item--${getListImage.length > 3 ? 3 : getListImage.length
+                }`,
+            ]" :style="{
+    '--content': reverseString(extraImages),
+}">
+                <div class="view-image__list__item__image">
+                    <img :src="url" alt="" />
+                </div>
+            </li>
+
+            <div class="layer-option">
+                <div class="layer-option__edit" @click="isEditImage = true">
+                    <img src="~/assets/icons/icon-pen-edit.svg" alt="" />
+                </div>
+            </div>
+        </ul>
+    </div>
+</template>
+
+<script lang="ts">
+import Vue from 'vue'
+
+export default Vue.extend({
+  props: {
+    files: {
+      type: Array,
+      default: ()=>[],
+    },
+  },
+  computed: {
+    getListImage(): Array<string> {
+      return this.files.reduce((acc: any, curr) => {
+        return [...acc, ...[curr]]
+      }, []) as Array<string>
+    },
+    dynamicGridCol() {
+      return {
+        'grid-template-columns': `repeat(${
+          this.getListImage.length >= 2 ? 2 : 1
+        }, 1fr)`,
+      }
+    },
+  },
+  methods: {
+
+  },
+})
+</script>
